@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import sys
+from typing import Any
 
 from redteam.graph import compile_graph
 from redteam.state import AttackCategory, RedTeamState
@@ -31,7 +32,7 @@ def main() -> None:
         "is_complete": False,
     }
 
-    app = compile_graph()
+    app: Any = compile_graph()
     config = {"configurable": {"thread_id": f"rt-{target}"}}
 
     print(f"\n🔴 Iniciando Red Teaming contra: {target}")

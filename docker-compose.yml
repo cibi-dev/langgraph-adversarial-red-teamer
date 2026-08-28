@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  red-teamer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cibi-dev/langgraph-adversarial-red-teamer:latest
+    container_name: langgraph-adversarial-red-teamer
+    restart: "no"
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["enterprise-guardrail-v1", "20"]
