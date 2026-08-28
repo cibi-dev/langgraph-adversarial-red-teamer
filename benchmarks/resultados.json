@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-08-28T02:32:45.670092+00:00",
+  "steps": {
+    "attacker_ms": 0.1,
+    "evaluator_ms": 0.17,
+    "judge_ms": 0.08
+  },
+  "total_pipeline_ms": 0.35000000000000003,
+  "probes_generated": 8,
+  "report_generated": true,
+  "evasion_rate": 0.125,
+  "is_certified": false,
+  "performance_ok": true
+}
